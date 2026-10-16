@@ -55,38 +55,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
+
   
-   /*  ПЕРЕКЛЮЧЕНИЕ ФОТО ПО КЛИКУ НА МИНИАТЮРЫ */
-  const mainImage = document.getElementById('main-image');
-  const thumbs = document.querySelectorAll('.gallery__thumb');
+    /*  ПЕРЕКЛЮЧЕНИЕ ФОТО ПО КЛИКУ НА МИНИАТЮРЫ */
+    const mainImage = document.getElementById('main-image');
+    const thumbs = document.querySelectorAll('.gallery__thumb');
 
-  thumbs.forEach(thumb => {
-    thumb.addEventListener('click', () => {
-      
-      thumbs.forEach(t => t.classList.remove('active'));
-      thumb.classList.add('active');
+    thumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+        
+        thumbs.forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
 
-      const newSrc = thumb.getAttribute('data-img');
-      mainImage.style.opacity = '0.4';
-      
-      setTimeout(() => {
-        mainImage.src = newSrc;
-        mainImage.style.opacity = '1';
-      }, 120);
+        const newSrc = thumb.getAttribute('data-img');
+        mainImage.style.opacity = '0.4';
+        
+        setTimeout(() => {
+            mainImage.src = newSrc;
+            mainImage.style.opacity = '1';
+        }, 120);
+        });
     });
-  });
   
     /* КНОПКА "В КОРЗИНУ"  */
     const cartBtn = document.getElementById('btn-cart');
     cartBtn.addEventListener('click', () => {
-      const originalText = cartBtn.textContent;
-      cartBtn.textContent = 'Добавлено!';
-      cartBtn.style.backgroundColor = '#1b4332';
-  
-      setTimeout(() => {
-        cartBtn.textContent = originalText;
-        cartBtn.style.backgroundColor = '';
-      }, 1500);
+        const originalText = cartBtn.textContent;
+        cartBtn.textContent = 'Добавлено!';
+        cartBtn.style.backgroundColor = '#1b4332';
+
+        setTimeout(() => {
+            cartBtn.textContent = originalText;
+            cartBtn.style.backgroundColor = '';
+        }, 1500);
     });
   
-  });
+});
