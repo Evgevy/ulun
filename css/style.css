@@ -175,19 +175,19 @@ main {
     margin-bottom: 24px;
 }
   
-.packaging-label {
+.product__packaging-label {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 8px;
 }
   
-.packaging-options {
+.product__packaging-options {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
   
-.packaging-btn {
+.product__packaging-btn {
     font-family: inherit;
     font-size: 14px;
     font-weight: 600;
@@ -200,11 +200,11 @@ main {
     transition: all 0.2s;
 }
   
-.packaging-btn:hover {
+.product__packaging-btn:hover {
     border-color: var(--color-primary);
 }
   
-.packaging-btn.active {
+.product__packaging-btn.active {
     border-color: var(--color-primary);
     background-color: #e8f5e9;
     color: var(--color-primary);

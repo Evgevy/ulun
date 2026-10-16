@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const priceCurrentElement = document.getElementById('price-current');
     const priceOldElement = document.getElementById('price-old');
     const badgeElement = document.getElementById('badge-discount');
-    const packagingButtons = document.querySelectorAll('.packaging-btn');
+    const packagingButtons = document.querySelectorAll('.product__packaging-btn');
   
     
     packagingButtons.forEach(button => {
